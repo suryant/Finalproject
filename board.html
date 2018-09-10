@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	
+	<title>CSIG</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Paper Dashboard core CSS    -->
+    <link href="assets/css/dashboard.css" rel="stylesheet"/>
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!--  Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+
+	<style>
+	
+	 
+li {
+  list-style: none;
+  padding: 5px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  margin: 0 0 5px;
+}
+ul {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 30%;
+  margin: 0 0.5%;
+  display: inline-block;
+  vertical-align: top;
+}
+ul.over {
+  padding-bottom: 55px;
+  background: url('http://www.cufonfonts.com/makeImage.php?width=650&id=1026&size=35&d=y&text=Drop%20Here') center bottom no-repeat #ccc;
+}
+ul.over li {
+  background: #fff;
+}
+
+#board div h3 {display: inline-block; width: 30%; margin: 1%; text-align: center;}
+	
+	
+.dragitem{
+height:50px;
+ border-left: 2px solid red;
+}
+	
+	
+	</style>
+	
+	
+	
+	
+	
+</head>
+<body>
+
+<div >
+	
+    <div class="main-panel" style="width:100%;">
+		 <nav class="navbar navbar-default" style="background-color:#fff;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                   
+                    <a class="navbar-brand" href="dashboard.html">Dashboard</a>
+                   
+                </div>
+            </div>
+        </nav>
+		
+		
+		
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    
+					
+					 <div class="card">
+                                    <div class="header">
+                                       
+											<p style="font-size:20px;">Tasks Plan Board</p>
+                                    </div>
+                                    <div class="content table-responsive table-full-width">
+                                      
+                                    </div>
+									
+									
+					
+					</div>
+					
+							<div id="board">
+							
+							
+								<div>
+								  <h3 class="icon-danger">To Do</h3><h3 class="icon-info">In Progress</h3><h3 class="icon-success">Done</h3>
+								</div>
+								
+								<ul id="todo">
+									<li id="item1" class="card dragitem" draggable="true">
+										<div class="row">
+										   <div class="col-lg-6">
+										   
+										     Task 1
+										   </div>
+											<div class="col-lg-6">
+										      Add data to xyz
+										     
+										   </div>										   
+										</div>
+										
+									</li>
+									<li id="item2" class="card dragitem"  draggable="true">
+									    <div class="row">
+										   <div class="col-lg-6">
+										   
+										     Task 2
+										   </div>
+											<div class="col-lg-6">
+										   
+										     Make instance restart
+										   </div>										   
+										</div>
+									
+									</li>
+									<li id="item3" class="card dragitem"  draggable="true">
+									   <div class="row">
+										   <div class="col-lg-6  ">
+										   
+										     Task 3
+										   </div>
+											<div class="col-lg-6">
+										   
+										      Reduce lines in code
+										   </div>										   
+										</div>
+									
+									
+									
+									</li>
+									<li id="item4" class="card dragitem"  draggable="true">
+									   <div class="row">
+										   <div class="col-lg-6">
+										   
+										     Task 1
+										   </div>
+											<div class="col-lg-6 ">
+										   
+										     Task 1
+										   </div>										   
+										</div>
+									
+									
+									</li>
+									
+									<li id="item5" class="card dragitem"  draggable="true">
+									   <div class="row">
+										   <div class="col-lg-6">
+										   
+										     Task 1
+										   </div>
+											<div class="col-lg-6">
+										   
+										     Task 1
+										   </div>										   
+										</div>
+									
+									
+									</li>
+								</ul>								
+							
+								<ul id="inprogress">
+								
+								<li id="item8" class="card dragitem"  draggable="true">
+									   <div class="row">
+										   <div class="col-lg-6">
+										   
+										     Task 8
+										   </div>
+											<div class="col-lg-6">
+										   
+										      Task in progress 
+										   </div>										   
+										</div>
+									
+									
+									</li>	
+								
+								</ul>
+								
+								<ul id="done">								
+									<li id="item6" class="card dragitem"  draggable="true">
+									   <div class="row">
+										   <div class="col-lg-6">
+										   
+										     Task 1
+										   </div>
+											<div class="col-lg-6">
+										   
+										     Task 1
+										   </div>										   
+										</div>
+									
+									
+									</li>									
+									<li id="item7" class="card dragitem"  draggable="true">
+									   
+										     Task 1
+										 
+									
+									
+									
+									</li>
+								</ul>
+							</div>
+					
+					
+                       
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+                <div class="container-fluid">
+                   
+                    <div class="copyright pull-right">
+                        &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="">CSIG</a>
+                    </div>
+                </div>
+            </footer>
+
+    </div>
+</div>
+
+
+</body>
+
+
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+
+
+<script>
+
+//li click to take to task details
+
+
+
+
+
+// change left border color based on content of the card
+var lis = $('li');
+   $(lis).each(function(){
+       if($(this).is(':contains("Task 1")')) 
+	   {  
+	      var id_tmp=$(this).attr('id');
+		  $("#"+id_tmp).css("border-left-color", "yellow");
+	     // alert(id_tmp);
+		}
+		else if($(this).is(':contains("Task 2")')) 
+	   {  
+	      var id_tmp=$(this).attr('id');
+		  $("#"+id_tmp).css("border-left-color", "green");
+	     // alert(id_tmp);
+		}
+		 
+          
+   });
+
+</script>
+
+</script>
+	
+	
+   <script>
+	$(document).ready(function(){
+  $('li').bind('dragstart', function(event) {
+    event.originalEvent.dataTransfer.setData("text/plain",  event.target.getAttribute('id'));
+  });
+
+  $('ul').bind('dragover', function(event) {
+    event.preventDefault();
+  });
+
+  $('ul').bind('dragenter', function(event) {
+    $(this).addClass("over");
+  });
+
+  $('ul').bind('dragleave drop', function(event) {
+    $(this).removeClass("over");
+  });
+
+  $('li').bind('drop', function(event) {
+    return false;
+  });
+
+  $('ul').bind('drop', function(event) {
+    var listitem = event.originalEvent.dataTransfer.getData("text/plain");
+    event.target.appendChild(document.getElementById(listitem));
+    event.preventDefault();
+  });
+});
+	
+	
+	</script>
+	<!--  Checkbox, Radio & Switch Plugins -->
+	<script src="assets/js/bootstrap-checkbox-radio.js"></script>
+
+	<!--  Charts Plugin -->
+	<script src="assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="assets/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+	<script src="assets/js/paper-dashboard.js"></script>
+
+	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+	<script src="assets/js/demo.js"></script>
+
+</html>
